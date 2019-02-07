@@ -1,0 +1,154 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a {
+    color: #7045a1;
+    text-decoration: none;
+}
+
+    a:hover,
+    a:focus {
+        color: #4e3070;
+        text-decoration: underline;
+    }
+
+
+.navbar-collapse,
+.navbar-collapse.collapse {
+    padding-left: 30%;
+}
+
+.navbar-inverse {
+    background-color: #4e3070 !important;
+    border-color: #4e3070;
+}
+
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus {
+        color: #f2edf7 !important;
+        background-color: #4e3070 !important;
+        padding-left: 30%;
+    }
+
+
+
+    .navbar-inverse .navbar-toggle {
+        border-color: #4e3070;
+    }
+
+        .navbar-inverse .navbar-toggle:hover,
+        .navbar-inverse .navbar-toggle:focus {
+            background-color: #4e3070;
+        }
+
+        .navbar-inverse .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-color: #4e3070;
+    }
+
+/*=====================btn purple+========================*/
+
+.btn-purple {
+    color: #cccccc;
+    background-color: #7045a1;
+    border-color: #342046;
+}
+
+    .btn-purple:focus,
+    .btn-purple.focus {
+        color: #fff;
+        background-color: #4e3070;
+        border-color: #4e3070;
+    }
+
+    .btn-purple:hover {
+        color: #fff;
+        background-color: #4e3070;
+        border-color: #9c73bf;
+    }
+
+    .btn-purple:active,
+    .btn-purple.active,
+    .open > .dropdown-toggle.btn-purple {
+        color: #333;
+        background-color: #dacbe7;
+        border-color: #9c73bf;
+    }
+
+        .btn-purple:active:hover,
+        .btn-purple.active:hover,
+        .open > .dropdown-toggle.btn-purple:hover,
+        .btn-purple:active:focus,
+        .btn-purple.active:focus,
+        .open > .dropdown-toggle.btn-purple:focus,
+        .btn-purple:active.focus,
+        .btn-purple.active.focus,
+        .open > .dropdown-toggle.btn-purple.focus {
+            color: #333;
+            background-color: #cdb9df;
+            border-color: #8350af;
+        }
+
+    .btn-purple:active,
+    .btn-purple.active,
+    .open > .dropdown-toggle.btn-purple {
+        background-image: none;
+    }
+
+    .btn-purple.disabled:hover,
+    .btn-purple[disabled]:hover,
+    fieldset[disabled] .btn-purple:hover,
+    .btn-purple.disabled:focus,
+    .btn-purple[disabled]:focus,
+    fieldset[disabled] .btn-purple:focus,
+    .btn-purple.disabled.focus,
+    .btn-purple[disabled].focus,
+    fieldset[disabled] .btn-purple.focus {
+        background-color: #fff;
+        border-color: #cdb9df;
+    }
+
+    .btn-purple .badge {
+        color: #fff;
+        background-color: #342046;
+    }
+
+/*================== Tooltip =========================*/
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #f4f0f4;
+    text-align: center;
+    background-color: #4e3070 !important;
+    border-radius: 4px;
+}
+
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #4e3070 !important;
+}

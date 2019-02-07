@@ -1,0 +1,78 @@
+﻿@model RegistrationAndLogin.Models.Student
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Student Home Page</h2>
+
+    <!--Welcome @HttpContext.Current.User.Identity.Name-->
+
+               <br /> 
+        
+                Welcome Mr./Mrs.
+        <strong>
+                        @if (System.Web.HttpContext.Current.Session["StudentName"] != null)
+                        {
+                            @System.Web.HttpContext.Current.Session["StudentName"].ToString();
+                        }
+
+        </strong>
+
+
+
+
+
+   
+    
+<br><br>
+
+<table class="table">
+    <tr>
+        <th>
+             Student Id 
+        </th>
+        <th>
+              First Name 
+        </th>
+        <th>
+             Last Name 
+        </th>
+
+        <th>
+             Email Address
+        </th>
+        
+    </tr>
+         
+     
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.LastName)</td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.EmailId)
+            </td>
+            
+        </tr>
+    
+
+</table>
+
+
+      
+
+
+            @if (Request.IsAuthenticated)
+            {
+                using (Html.BeginForm("Logout", "Student", FormMethod.Post, new { id = "logoutForm" }))
+                {
+                    <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
+
+                }
+
+            }
